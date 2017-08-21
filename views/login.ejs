@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>话费管理系统-登录</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/login.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" media="screen" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+
+</head>
+<body>
+<div class="header">
+    <img src="images/logo.png" alt="话费管理系统"/>
+</div>
+<div class="content-box">
+    <div class="content">
+        <div class="title">
+            <h1>话费支付管理平台</h1>
+            <h3>——优贝支付  为您服务</h3>
+        </div>
+        <div class="login-box">
+            <h2>登  录</h2>
+            <form action="" class="login-form">
+                <div class="lyform-group" style="margin-top: 30px;">
+                    <input class="form-control" placeholder="请输入账户" type="text" id="name">
+                </div>
+                <div class="lyform-group">
+                    <input class="form-control" placeholder="请输入密码" type="password" id="password">
+                </div>
+                <div class="lyform-group">
+                    <input type="text" class="validata" placeholder="请输入图片验证码" name="captcha" id="captcha">
+                    <img src="/captcha" onclick="reloadCaptcha()" id="captchaReloadButton">
+                </div>
+                <div class="lyform-group" style="margin-top: 50px;">
+                    <button type="button" class="denglu" onclick="login()">登 录</button>
+                </div>
+                <div class="error" id="error">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="javascripts/local/login.js"></script>
+</body>
+</html>
